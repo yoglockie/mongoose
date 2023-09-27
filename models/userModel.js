@@ -1,5 +1,5 @@
 import mongoose from "mongoose";
-import electronics from "./userschema.js";
+import electronics from "./userSchema.js";
 import connectDB from "../connection/db.js";
 
 // const createDocument = async () => {
@@ -37,6 +37,7 @@ import connectDB from "../connection/db.js";
 //   }
 // };
 // createDocument();
+
 // const getProducts = async () => {
 //   try {
 //     // Connect to the database

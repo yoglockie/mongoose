@@ -1,8 +1,8 @@
 import express from "express";
 import colors from "colors";
 import path from "path";
-// import productRoutes from "./routes/productRoutes.js";
-// import userRoutes from "./routes/userRoutes.js";
+import productRoutes from "./routes/productRoutes.js";
+import userRoutes from "./routes/userRoutes.js";
 import connectDB from "./connection/db.js"; // Import the database connection function
 import morgan from "morgan";
 import cors from "cors";
@@ -20,8 +20,8 @@ app.use(cors());
 app.use(express.json());
 app.use(morgan("dev"));
 
-// app.use("/products", productRoutes);
-// app.use("/users", userRoutes);
+app.use("/products", productRoutes);
+app.use("/users", userRoutes);
 
 
 app.get("/",(req,res)=>{
